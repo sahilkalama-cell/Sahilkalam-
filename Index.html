@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sahil Kalam – Vlog</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Reset & Base */
+* {margin:0; padding:0; box-sizing:border-box;}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height:1.6;
+  color:#333;
+  background:#f5f5f5;
+}
+
+/* Header */
+.hero {
+  background: url('images/banner.jpg') center/cover no-repeat;
+  padding: 5rem 1rem;
+  text-align: center;
+  color: white;
+  background-color: #444; /* fallback if image missing */
+}
+.hero h1 { font-size: 3rem; margin-bottom: .5rem; }
+.tagline { font-size: 1.2rem; }
+
+/* Navigation */
+.navbar {
+  background:#222;
+  display:flex;
+  justify-content:center;
+  gap:2rem;
+  padding:1rem 0;
+}
+.navbar a {
+  color:#fff; text-decoration:none;
+  font-weight:500;
+}
+.navbar a:hover { color:#ffb400; }
+
+/* Sections */
+.section {
+  padding:3rem 1rem;
+  max-width:1000px;
+  margin:auto;
+}
+
+/* Vlog Grid */
+.vlog-grid {
+  display:grid;
+  gap:2rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.vlog-card {
+  background:white;
+  border-radius:10px;
+  overflow:hidden;
+  box-shadow:0 4px 8px rgba(0,0,0,0.1);
+}
+.vlog-card img {
+  width:100%;
+  display:block;
+}
+.vlog-card h3 {
+  margin:1rem;
+}
+.vlog-card p {
+  margin:0 1rem 1rem;
+}
+.btn {
+  display:inline-block;
+  margin:0 1rem 1rem;
+  padding:.5rem 1rem;
+  background:#ffb400;
+  color:#000;
+  border-radius:5px;
+  text-decoration:none;
+  font-weight:bold;
+}
+.btn:hover { background:#e0a000; }
+
+/* Footer */
+footer {
+  background:#222;
+  color:#fff;
+  text-align:center;
+  padding:1rem;
+  margin-top:2rem;
+}
+  </style>
+</head>
+<body>
+  <!-- Header / Banner -->
+  <header class="hero">
+    <h1>Sahil Kalam</h1>
+    <p class="tagline">Vlogs • Travel • Daily Life</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <a href="#about">About</a>
+    <a href="#vlogs">Latest Vlogs</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>Hi! I’m Sahil Kalam from Bettiah, Bihar.  
+       I love sharing my day-to-day experiences, travel stories, and fun moments with you all.</p>
+  </section>
+
+  <!-- Vlog Posts -->
+  <section id="vlogs" class="section vlog-grid">
+    <h2>Latest Vlogs</h2>
+    <article class="vlog-card">
+      <img src="images/vlog1.jpg" alt="Vlog 1">
+      <h3>My First Video</h3>
+      <p>A quick intro and a walk through my hometown.</p>
+      <a href="#" class="btn">Watch</a>
+    </article>
+
+    <article class="vlog-card">
+      <img src="images/vlog2.jpg" alt="Vlog 2">
+      <h3>Street Food Tour</h3>
+      <p>Tasting the best snacks in Bettiah market.</p>
+      <a href="#" class="btn">Watch</a>
+    </article>
+    <!-- Add more vlog cards as needed -->
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:sahilkalam@gmail.com">sahilkalam@gmail.com</a></p>
+    <p>Instagram: <a href="https://instagram.com/" target="_blank">@sahilkalam93</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Sahil Kalam. All rights reserved.</p>
+  </footer>
+</body>
+</html>
