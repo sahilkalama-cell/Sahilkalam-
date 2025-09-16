@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Modern Web</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(120deg, #111, #222);
+      color: white;
+      overflow-x: hidden;
+    }
+
+    header {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 600;
+      animation: fadeInUp 1s ease forwards;
+      opacity: 0;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-top: 20px;
+      max-width: 600px;
+      animation: fadeInUp 1.5s ease forwards;
+      opacity: 0;
+    }
+
+    .btn {
+      margin-top: 30px;
+      padding: 12px 30px;
+      background: white;
+      color: black;
+      border: none;
+      font-weight: bold;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #ff4081;
+      color: white;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        transform: translateY(30px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    section {
+      padding: 80px 20px;
+      background: #181818;
+      text-align: center;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    section p {
+      font-size: 1rem;
+      color: #ccc;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+
+      .btn {
+        padding: 10px 25px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to Modern Web</h1>
+    <p>Beautiful, fast, and responsive website design made for everyone. Inspired by the best modern UI trends.</p>
+    <button class="btn" onclick="scrollToSection()">Explore More</button>
+  </header>
+
+  <section id="info">
+    <h2>Why Choose Us?</h2>
+    <p>
+      We craft stunning and intuitive digital experiences using the latest in web technology. From elegant portfolios to powerful business platforms — we deliver excellence.
+    </p>
+  </section>
+
+  <script>
+    function scrollToSection() {
+      document.getElementById('info').scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+
+</body>
+</html>
